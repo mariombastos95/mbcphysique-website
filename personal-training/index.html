@@ -26,7 +26,7 @@ a{color:#F3502F}a:hover{color:#ff7a5a}
 .view-pill[aria-pressed="true"]{border-color:#C9A27A;color:#F4F1EC}
 details summary::-webkit-details-marker{display:none}
 details[open] .faq-plus{transform:rotate(45deg)}
-@media (max-width:1060px){.hero-photo{margin:0 0 48px !important;min-height:440px}}
+@media (max-width:900px){.hero-bg{width:100% !important}.hero-fade{background:linear-gradient(90deg,rgba(17,17,17,0.92) 0%,rgba(17,17,17,0.75) 60%,rgba(17,17,17,0.55) 100%) !important}}
 </style>
 </head>
 <body>
@@ -47,9 +47,14 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </nav>
 </header>
 
-<section id="top">
-<div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 0 48px">
-<div style="flex: 1 1 520px; min-width: 0; padding: clamp(72px, 10vw, 140px) 0; display: flex; flex-direction: column; justify-content: center">
+<section id="top" style="position: relative; overflow: hidden; background: #111111">
+<div class="hero-bg" aria-hidden="true" style="position: absolute; top: 0; right: 0; bottom: 0; width: 64%">
+<img src="../assets/training.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 48% 35%; display: block; filter: saturate(0.75) contrast(1.05) brightness(0.85)">
+<div class="hero-fade" style="position: absolute; inset: 0; background: linear-gradient(90deg, #111111 0%, rgba(17,17,17,0.85) 18%, rgba(17,17,17,0.2) 48%, rgba(17,17,17,0) 70%)"></div>
+<div style="position: absolute; inset: 0; background: linear-gradient(0deg, #111111 0%, rgba(17,17,17,0) 22%)"></div>
+</div>
+<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 0 24px">
+<div style="position: relative; max-width: 600px; padding: clamp(80px, 11vw, 160px) 0">
 <p style="margin: 0 0 32px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A27A">Body composition transformation · Amsterdam</p>
 <h1 style="margin: 0; font-family: 'Barlow', sans-serif; font-weight: 600; letter-spacing: -0.02em; font-size: clamp(46px, 5.4vw, 80px); line-height: 1.02; color: #F4F1EC">An exceptional physique,<br><em style="font-style: normal; font-weight: 500; color: #C9A27A">without compromise.</em></h1>
 <p style="margin: 36px 0 0; max-width: 500px; font-size: 19px; color: #B9B3AC">I help ambitious professionals build an exceptional physique without compromising their professional responsibilities, through structured training and practical nutrition.</p>
@@ -57,11 +62,6 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <a href="#contact" class="metal-btn" style="text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.16em; text-transform: uppercase; padding: 18px 34px">Get in touch</a>
 <a href="#results" class="ghost-btn" style="border: 1px solid #4A4540; color: #ECE8E3; text-decoration: none; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.16em; text-transform: uppercase; padding: 17px 34px">See results</a>
 </div>
-</div>
-<div class="hero-photo" style="flex: 1 1 460px; min-width: 0; margin: clamp(72px, 10vw, 140px) 0; position: relative; overflow: hidden">
-<img src="../assets/mario.jpg" alt="Mário Bastos, body composition transformation specialist in Amsterdam" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; filter: contrast(1.05) saturate(0.85)">
-<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(17,17,17,0.55) 0%, rgba(17,17,17,0) 35%)"></div>
-<div class="metal-bg" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 38%; height: 4px"></div>
 </div>
 </div>
 </section>
@@ -90,14 +90,20 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </section>
 
 <section aria-labelledby="coach-h" style="background: #0B0B0B">
-<div style="max-width: 900px; margin: 0 auto; padding: clamp(96px, 12vw, 160px) 24px; text-align: center">
+<div style="max-width: 1280px; margin: 0 auto; padding: clamp(96px, 12vw, 160px) 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px 80px">
+<div style="flex: 1 1 360px; min-width: 0; max-width: 520px; aspect-ratio: 4 / 5; position: relative; overflow: hidden; background: #1C1C1C">
+<img src="../assets/mario.jpg" alt="Mário Bastos, body composition transformation specialist in Amsterdam" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; display: block">
+<div class="metal-bg" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 38%; height: 4px"></div>
+</div>
+<div style="flex: 1 1 440px; min-width: 0">
 <p style="margin: 0 0 20px; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 15px; letter-spacing: 0.34em; text-transform: uppercase; color: #C9A27A">Your coach</p>
 <h2 id="coach-h" style="margin: 0; font-family: 'Barlow', sans-serif; font-weight: 600; letter-spacing: -0.02em; font-size: clamp(44px, 5.5vw, 76px); line-height: 1.05; color: #F4F1EC">Mário Bastos</h2>
 <p style="margin: 12px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.24em; text-transform: uppercase; color: #8C867F">Body composition transformation specialist</p>
-<p style="margin: 28px auto 0; max-width: 640px; color: #B9B3AC; font-size: 19px">I've been training for 12 years and working in high-level personal training since 2022, with hundreds of successful transformations.</p>
-<p style="margin: 16px auto 0; max-width: 640px; color: #B9B3AC; font-size: 19px">Fitness is my passion, and I live my life aligned with my goals. My mission is to pass that passion on to you, so you can be successful too. When you share that mindset, results come faster.</p>
-<p style="margin: 16px auto 0; max-width: 640px; color: #B9B3AC; font-size: 19px">This approach is designed for individuals who value clarity, consistency, results and are willing to apply them.</p>
+<p style="margin: 32px 0 0; max-width: 600px; color: #B9B3AC; font-size: 19px">I've been training for 12 years and working in high-level personal training since 2022, with hundreds of successful transformations.</p>
+<p style="margin: 16px 0 0; max-width: 600px; color: #B9B3AC; font-size: 19px">Fitness is my passion, and I live my life aligned with my goals. My mission is to pass that passion on to you, so you can be successful too. When you share that mindset, results come faster.</p>
+<p style="margin: 16px 0 0; max-width: 600px; color: #B9B3AC; font-size: 19px">This approach is designed for individuals who value clarity, consistency, results and are willing to apply them.</p>
 <p style="margin: 40px 0 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.3em; text-transform: uppercase; color: #C9A27A">Excellence in every session.</p>
+</div>
 </div>
 </section>
 
