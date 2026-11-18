@@ -23,6 +23,20 @@ a{color:#F3502F}a:hover{color:#ff7a5a}
 details summary::-webkit-details-marker{display:none}
 @media (max-width:760px){.cred-sep{display:none}.cred-row{flex-direction:column;gap:6px}}
 details[open] .faq-plus{transform:rotate(45deg)}
+.lvls{margin-top:24px}
+.lvl{position:relative;display:flex;align-items:center}
+.lvl+.lvl{margin-top:-170px}
+.lvl-r{flex-direction:row-reverse}
+.lvl-img::after{content:"";position:absolute;inset:-1px;pointer-events:none;background:linear-gradient(to right,#0F0F0F 0,rgba(15,15,15,0) 26%,rgba(15,15,15,0) 74%,#0F0F0F 100%),linear-gradient(to bottom,#0F0F0F 0,rgba(15,15,15,0) 22%,rgba(15,15,15,0) 68%,#0F0F0F 100%)}
+.lvl-img{position:relative;width:min(49%,600px);aspect-ratio:1/1;flex:0 0 auto}
+.lvl-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.05) saturate(.9);
+}
+.lvl-t{position:relative;z-index:2;margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:.95;text-transform:uppercase;color:#F4F4F4}
+.lvl-r .lvl-t{margin-right:-60px;text-align:right}
+.lvl-l .lvl-t{margin-left:-60px}
+.lvl-dim img{filter:brightness(.78) contrast(1.05) saturate(.9)}
+@media (max-width:760px){.lvl,.lvl-r{flex-direction:column}.lvl-r{align-items:flex-end}.lvl-l{align-items:flex-start}.lvl+.lvl{margin-top:-10px}.lvl-img{width:84%}.lvl-r .lvl-t,.lvl-l .lvl-t{margin:-56px 0 0}.lvl-t{font-size:36px}}
+
 </style>
 <link rel="canonical" href="https://mbcphysique.com/bodybuilding/">
 <meta property="og:url" content="https://mbcphysique.com/bodybuilding/">
@@ -118,30 +132,26 @@ details[open] .faq-plus{transform:rotate(45deg)}
 </div>
 </section>
 
-<section id="support" aria-labelledby="support-h" style="background: #0F0F0F; border-bottom: 1px solid #242424">
+<section id="support" aria-labelledby="support-h" style="background: #0F0F0F; overflow: hidden">
 <div style="max-width: 1280px; margin: 0 auto; padding: clamp(80px, 10vw, 140px) 24px">
 <h2 id="support-h" style="margin: 0; max-width: 900px; font-family: 'Anton', sans-serif; font-weight: 400; font-size: clamp(44px, 6vw, 84px); line-height: 0.95; text-transform: uppercase">All the way to <span class="metal-text">stage.</span></h2>
-<p style="margin: 28px 0 0; max-width: 620px; color: #BDBDBD; font-size: 19px">Some parts of a prep happen away from the check-ins. This is how I support you through them.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 56px 40px; margin-top: 64px">
-<div style="min-width: 0">
-<div style="aspect-ratio: 4 / 5; position: relative; overflow: hidden; background: #1F1F1F"><img src="../assets/backstage.jpg" alt="Mário Bastos backstage with his athlete after a natural bodybuilding show" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"><div class="metal-bg" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 38%; height: 4px"></div></div>
-<h3 style="margin: 24px 0 0; font-family: 'Anton', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1; text-transform: uppercase">Backstage support</h3>
-<p style="margin: 14px 0 0; color: #BDBDBD">At shows in the Netherlands and nearby, I'm backstage with you on the day, from the pump-up to the moment you walk on stage. For shows further away, I support you remotely through the whole day.</p>
+<div class="lvls">
+<div class="lvl lvl-r">
+<div class="lvl-img"><img src="../assets/backstage.jpg" alt="Mário Bastos backstage with his athlete at a natural bodybuilding show" loading="lazy"></div>
+<h3 class="lvl-t">Backstage support</h3>
 </div>
-<div style="min-width: 0">
-<div style="aspect-ratio: 4 / 5; position: relative; overflow: hidden; background: #1F1F1F"><img src="../assets/posing.jpg" alt="Posing coaching session for a natural bodybuilding competitor" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"><div class="metal-bg" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 38%; height: 4px"></div></div>
-<h3 style="margin: 24px 0 0; font-family: 'Anton', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1; text-transform: uppercase">Posing coaching</h3>
-<p style="margin: 14px 0 0; color: #BDBDBD">Your mandatory poses are built for your category and refined throughout your prep, so you walk on stage comfortable showing everything you've built.</p>
+<div class="lvl lvl-l">
+<div class="lvl-img"><img src="../assets/posing.jpg" alt="Posing coaching for a natural bodybuilding competitor" loading="lazy"></div>
+<h3 class="lvl-t">Posing coaching</h3>
 </div>
-<div style="min-width: 0">
-<div style="aspect-ratio: 4 / 5; position: relative; overflow: hidden; background: #1F1F1F"><img src="../assets/assessment.jpg" alt="Physique assessment with a natural bodybuilding athlete in the gym" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"><div class="metal-bg" aria-hidden="true" style="position: absolute; left: 0; bottom: 0; width: 38%; height: 4px"></div></div>
-<h3 style="margin: 24px 0 0; font-family: 'Anton', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1; text-transform: uppercase">Physique assessment</h3>
-<p style="margin: 14px 0 0; color: #BDBDBD">Your physique is assessed throughout the season. We compare how it develops over months, which tells us what to bring up next and when you're ready for stage.</p>
+<div class="lvl lvl-r">
+<div class="lvl-img"><img src="../assets/assessment.jpg" alt="Physique assessment with a natural bodybuilding athlete" loading="lazy"></div>
+<h3 class="lvl-t">Physique assessment</h3>
 </div>
+<div class="lvl lvl-l lvl-dim">
+<div class="lvl-img"><img src="../assets/federation.jpg" alt="Mário Bastos reviewing an athlete's preparation, WNBF Pro card on the wall" loading="lazy"></div>
+<h3 class="lvl-t">Federation guidance</h3>
 </div>
-<div style="margin-top: 64px; padding: 36px 0 0; border-top: 1px solid #2E2E2E; display: flex; flex-wrap: wrap; gap: 16px 56px; align-items: baseline">
-<h3 style="margin: 0; flex: 0 0 auto; font-family: 'Anton', sans-serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1; text-transform: uppercase">Federation <span class="metal-text">guidance</span></h3>
-<p style="margin: 0; flex: 1 1 420px; color: #BDBDBD">Every federation has its own rules on categories, drug testing and registration. You'll know what applies to your show before you sign up, so nothing on show day comes as a surprise.</p>
 </div>
 </div>
 </section>
