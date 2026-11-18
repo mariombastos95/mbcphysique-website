@@ -32,12 +32,14 @@ details[open] .faq-plus{transform:rotate(45deg)}
 .lvl-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.05) saturate(.9);
 }
 .lvl-t{position:relative;z-index:2;margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.2vw,58px);line-height:.95;text-transform:uppercase;color:#FFFFFF;text-shadow:0 2px 6px rgba(0,0,0,.85),0 6px 30px rgba(0,0,0,.9)}
-.lvl-txt{position:relative;z-index:2;max-width:560px}
-.lvl-r .lvl-txt{margin-right:-60px;text-align:right}
-.lvl-l .lvl-txt{margin-left:-60px}
-.lvl-p{margin:18px 0 0;color:#C9C9C9;font-size:17px;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+.lvl-txt{position:relative;z-index:2;box-sizing:border-box;max-width:540px;padding:30px 34px 32px;background:linear-gradient(160deg,rgba(24,24,24,.78),rgba(12,12,12,.62));-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.07);border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.lvl-txt::before{content:"";position:absolute;top:30px;width:4px;height:44px;background:#C8102E}
+.lvl-l .lvl-txt::before{left:0}.lvl-r .lvl-txt::before{right:0}
+.lvl-r .lvl-txt{margin-right:-80px;text-align:right}
+.lvl-l .lvl-txt{margin-left:-80px}
+.lvl-p{margin:16px 0 0;color:#DADADA;font-size:18px;line-height:1.6}
 .lvl-dim img{filter:brightness(.78) contrast(1.05) saturate(.9)}
-@media (max-width:760px){.lvl,.lvl-r{flex-direction:column}.lvl-r{align-items:flex-end}.lvl-l{align-items:flex-start}.lvl+.lvl{margin-top:24px}.lvl-img{width:84%}.lvl-r .lvl-txt,.lvl-l .lvl-txt{margin:-56px 0 0;max-width:none;width:100%;text-align:left}.lvl-t{font-size:36px}.lvl-p{font-size:16px}}
+@media (max-width:760px){.lvl,.lvl-r{flex-direction:column}.lvl-r{align-items:flex-end}.lvl-l{align-items:flex-start}.lvl+.lvl{margin-top:28px}.lvl-img{width:84%}.lvl-r .lvl-txt,.lvl-l .lvl-txt{margin:-70px 0 0;max-width:none;width:100%;text-align:left;padding:22px 22px 24px}.lvl-r .lvl-txt::before{right:auto;left:0}.lvl-txt::before{top:24px;height:36px}.lvl-t{font-size:34px}.lvl-p{font-size:16px}}
 
 </style>
 <link rel="canonical" href="https://mbcphysique.com/bodybuilding/">
@@ -146,7 +148,7 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <div class="lvl lvl-l">
 <div class="lvl-img"><img src="../assets/posing.jpg" alt="Posing coaching for a natural bodybuilding competitor" loading="lazy"></div>
 <div class="lvl-txt"><h3 class="lvl-t">Posing <span class="metal-text">guidance</span></h3>
-<p class="lvl-p">Your mandatory poses are key to stage success. Together we ensure you are nailing your posing for your respective category so your stage presence is nailed.</p></div>
+<p class="lvl-p">Your mandatory poses are key to stage success. Together we ensure you are nailing your posing for your respective category so your stage presence stands out.</p></div>
 </div>
 <div class="lvl lvl-r">
 <div class="lvl-img"><img src="../assets/assessment.jpg" alt="Physique assessment with a natural bodybuilding athlete" loading="lazy"></div>
