@@ -25,17 +25,19 @@ details summary::-webkit-details-marker{display:none}
 details[open] .faq-plus{transform:rotate(45deg)}
 .lvls{margin-top:24px}
 .lvl{position:relative;display:flex;align-items:center}
-.lvl+.lvl{margin-top:-170px}
+.lvl+.lvl{margin-top:-70px}
 .lvl-r{flex-direction:row-reverse}
 .lvl-img::after{content:"";position:absolute;inset:-1px;pointer-events:none;background:linear-gradient(to right,#0F0F0F 0,rgba(15,15,15,0) 26%,rgba(15,15,15,0) 74%,#0F0F0F 100%),linear-gradient(to bottom,#0F0F0F 0,rgba(15,15,15,0) 22%,rgba(15,15,15,0) 68%,#0F0F0F 100%)}
 .lvl-img{position:relative;width:min(49%,600px);aspect-ratio:1/1;flex:0 0 auto}
 .lvl-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:contrast(1.05) saturate(.9);
 }
-.lvl-t{position:relative;z-index:2;margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:.95;text-transform:uppercase;color:#FFFFFF;text-shadow:0 2px 6px rgba(0,0,0,.85),0 6px 30px rgba(0,0,0,.9)}
-.lvl-r .lvl-t{margin-right:-60px;text-align:right}
-.lvl-l .lvl-t{margin-left:-60px}
+.lvl-t{position:relative;z-index:2;margin:0;font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(36px,4.2vw,58px);line-height:.95;text-transform:uppercase;color:#FFFFFF;text-shadow:0 2px 6px rgba(0,0,0,.85),0 6px 30px rgba(0,0,0,.9)}
+.lvl-txt{position:relative;z-index:2;max-width:560px}
+.lvl-r .lvl-txt{margin-right:-60px;text-align:right}
+.lvl-l .lvl-txt{margin-left:-60px}
+.lvl-p{margin:18px 0 0;color:#C9C9C9;font-size:17px;line-height:1.6;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 .lvl-dim img{filter:brightness(.78) contrast(1.05) saturate(.9)}
-@media (max-width:760px){.lvl,.lvl-r{flex-direction:column}.lvl-r{align-items:flex-end}.lvl-l{align-items:flex-start}.lvl+.lvl{margin-top:-10px}.lvl-img{width:84%}.lvl-r .lvl-t,.lvl-l .lvl-t{margin:-56px 0 0}.lvl-t{font-size:36px}}
+@media (max-width:760px){.lvl,.lvl-r{flex-direction:column}.lvl-r{align-items:flex-end}.lvl-l{align-items:flex-start}.lvl+.lvl{margin-top:24px}.lvl-img{width:84%}.lvl-r .lvl-txt,.lvl-l .lvl-txt{margin:-56px 0 0;max-width:none;width:100%;text-align:left}.lvl-t{font-size:36px}.lvl-p{font-size:16px}}
 
 </style>
 <link rel="canonical" href="https://mbcphysique.com/bodybuilding/">
@@ -138,19 +140,23 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <div class="lvls">
 <div class="lvl lvl-r">
 <div class="lvl-img"><img src="../assets/backstage.jpg" alt="Mário Bastos backstage with his athlete at a natural bodybuilding show" loading="lazy"></div>
-<h3 class="lvl-t">Backstage <span class="metal-text">support</span></h3>
+<div class="lvl-txt"><h3 class="lvl-t">Backstage <span class="metal-text">support</span></h3>
+<p class="lvl-p">At shows in the Netherlands and nearby, I&rsquo;m backstage with you on the day, all the way to the moment you walk on stage. For shows further away, I support you remotely through the whole day.</p></div>
 </div>
 <div class="lvl lvl-l">
 <div class="lvl-img"><img src="../assets/posing.jpg" alt="Posing coaching for a natural bodybuilding competitor" loading="lazy"></div>
-<h3 class="lvl-t">Posing <span class="metal-text">coaching</span></h3>
+<div class="lvl-txt"><h3 class="lvl-t">Posing <span class="metal-text">guidance</span></h3>
+<p class="lvl-p">Your mandatory poses are key to stage success. Together we ensure you are nailing your posing for your respective category so your stage presence is nailed.</p></div>
 </div>
 <div class="lvl lvl-r">
 <div class="lvl-img"><img src="../assets/assessment.jpg" alt="Physique assessment with a natural bodybuilding athlete" loading="lazy"></div>
-<h3 class="lvl-t">Physique <span class="metal-text">assessment</span></h3>
+<div class="lvl-txt"><h3 class="lvl-t">Physique <span class="metal-text">assessment</span></h3>
+<p class="lvl-p">I will guide you to the category you fit best, and ensure we program our process to make your physique as complete and competitive as possible.</p></div>
 </div>
 <div class="lvl lvl-l lvl-dim">
 <div class="lvl-img"><img src="../assets/federation.jpg" alt="Mário Bastos reviewing an athlete's preparation, WNBF Pro card on the wall" loading="lazy"></div>
-<h3 class="lvl-t">Federation <span class="metal-text">guidance</span></h3>
+<div class="lvl-txt"><h3 class="lvl-t">Federation <span class="metal-text">guidance</span></h3>
+<p class="lvl-p">It will be very important to know which federation you want to compete at. Rules may differ from each one of them, in things like testing, tanning rules, posing and judging criteria. So I will guide you to ensure you are 100% ready for your shows.</p></div>
 </div>
 </div>
 </div>
